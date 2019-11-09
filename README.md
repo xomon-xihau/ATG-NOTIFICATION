@@ -1,2 +1,2 @@
 # ATG-NOTIFICATION
-A notification sytem written in fish. It's notify  you the title of new chapter when its released.
+A notification sytem written in fish. You will get notification if new chapter is released.

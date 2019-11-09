@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 set FILE $HOME/.oldchap
 if not test -f $FILE
-    touch $HOME/.oldchap
+    echo 'some random words' > $HOME/.oldchap
 end
 if not type --quiet 'curl'
     echo 'Plz install curl'

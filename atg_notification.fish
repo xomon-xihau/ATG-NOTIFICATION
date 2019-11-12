@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 set FILE $HOME/.oldchap
-if not test -f $FILE
+if not (test -f $FILE)
     echo 'some random words' > $HOME/.oldchap
 end
 if test (uname -o) = 'Android'

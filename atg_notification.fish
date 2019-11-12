@@ -3,6 +3,9 @@ set FILE $HOME/.oldchap
 if not test -f $FILE
     echo 'some random words' > $HOME/.oldchap
 end
+if test uname -o == 'Android'
+    alias notify-send='termux-notification --sound -c'
+end
 while true
     set OLDCHAP (cat $FILE)
     set NEWCHAP (curl -s 'http://book.zongheng.com/book/408586.html' | grep -oP '第.*章.*(?<=/a)')

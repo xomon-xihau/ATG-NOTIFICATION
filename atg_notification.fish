@@ -8,7 +8,7 @@ if test (uname -o) = 'Android'
 end
 while true
     set OLDCHAP (cat $FILE)
-    set NEWCHAP (curl -s 'http://book.zongheng.com/book/408586.html' | grep -oP '第.*章.*(?<=/a)')
+    set NEWCHAP (curl -s 'http://book.zongheng.com/book/408586.html' | grep -oP '第.*章.*(?=</a)')
     if test $NEWCHAP != $OLDCHAP
         notify-send 'Raw is out'
         notify-send $NEWCHAP

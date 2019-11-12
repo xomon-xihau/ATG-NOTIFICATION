@@ -14,5 +14,5 @@ while true
         notify-send $NEWCHAP
         echo $NEWCHAP > $FILE
     end
-    sleep 100
+    sleep 5
 end
